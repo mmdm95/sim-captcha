@@ -475,5 +475,8 @@ See **script** part of **index.php** if you are not familiar with
 ajax creation or not using a library like **jQuery** to create 
 ajax request.
 
+Note: If you store captcha under a specific name, be careful and 
+send name of captcha with ajax request.
+
 # License
 Under MIT license.
