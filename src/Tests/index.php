@@ -5,6 +5,7 @@ use Sim\Captcha\CaptchaFactory;
 use Sim\Captcha\i18n\Persian;
 
 include_once '../../vendor/autoload.php';
+//include_once '../../autoloader.php';
 
 /**
  * @var Captcha $captcha
