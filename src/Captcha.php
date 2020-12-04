@@ -106,7 +106,7 @@ class Captcha extends AbstractCaptchaText
             $colors[] = imagecolorallocate($image, $red - 20 * $i, $green - 20 * $i, $blue - 20 * $i);
         }
 
-        if($this->has_noise) {
+        if ($this->has_noise) {
             for ($w = 1; $w <= $width; $w++) {
                 for ($h = 1; $h <= $height; $h++) {
                     if (mt_rand(1, 100) >= 65) {
@@ -169,13 +169,15 @@ class Captcha extends AbstractCaptchaText
             throw new CaptchaException("Verify phrase is not valid! Please specify a string value");
         }
 
+        if (empty($input)) return false;
+
         $value = (string)implode('', $value);
         if (CaptchaFactory::DIFFICULTY_NORMAL == $this->difficulty) {
             $value = mb_strtolower($value);
             $input = mb_strtolower($input);
         }
 
-        if($this->use_english_numbers_to_verify) {
+        if ($this->use_english_numbers_to_verify) {
             $converter = new NumberConverterUtil($this->language, new English());
             $value = $converter->convert($value);
             $input = $converter->convert($input);
