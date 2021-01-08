@@ -361,6 +361,7 @@ then verify entered code.
 Default is *false*
 
 Note: Use this method before verify method.
+
 Note: Be careful and specify language before verify method to 
 prevent unwanted behaviors.
 
