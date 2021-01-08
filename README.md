@@ -95,7 +95,7 @@ $captcha = CaptchaFactory::instance();
 ``` 
 
 If you need to type hint your variable, according to your IDE 
-you should type hint variable. Must of editors should word with 
+you should type hint variable. Most of editors should word with 
 `@var`.
 
 ```php
