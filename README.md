@@ -421,6 +421,7 @@ characters.
 Default is `CaptchaFactory::DIFFICULTY_NORMAL`
 
 Note: All numbers and alphabet used from specified language
+
 Note: Because `CaptchaFactory::DIFFICULTY_NORMAL` use capital 
 characters, it is CASE-INSENSITIVE.
 
